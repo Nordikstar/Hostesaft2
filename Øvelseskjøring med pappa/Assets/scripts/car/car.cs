@@ -22,6 +22,8 @@ public class car : MonoBehaviour
     {
         Debug.Log("hit dettected");
     }
+    
+
 
 }
 

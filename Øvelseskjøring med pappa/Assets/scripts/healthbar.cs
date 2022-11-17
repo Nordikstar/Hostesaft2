@@ -6,17 +6,13 @@ using UnityEngine.UI;
 public class healthbar : MonoBehaviour
 {
     public Image angry;
+    public int number = 1;
+    public Sprite[] spriteArray;
+    public SpriteRenderer spr;
+    public SpriteRenderer spriteRenderer;
+    public Sprite newSprite;
 
-        public Sprite en;
-        public Sprite to;
-        public Sprite tre;
-        public Sprite fire;
-        public Sprite fem;
-        public Sprite seks;
-        public Sprite syv;
-        public Sprite åtte;
-        public Sprite ni;
-        public Sprite ti;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +23,16 @@ public class healthbar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
+
+
+  private void OnCollisionEnter2D(Collision2D collision)
+    {
+        number++;
+    }
+
+  
 }
+
+
