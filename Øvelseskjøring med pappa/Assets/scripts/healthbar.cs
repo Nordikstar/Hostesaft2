@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class healthbar : MonoBehaviour
 {
@@ -15,7 +16,10 @@ public class healthbar : MonoBehaviour
     public Sprite newSprite;
     //public int hits = 1;
     
-
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     
 
 
@@ -40,8 +44,10 @@ public class healthbar : MonoBehaviour
   public void OnCollisionEnter2D(Collision2D collision)
     {
        Number++;
-        //hits ++;
-        //spriteChange.visible = false;
+        if (Number > 2)
+        {
+            ResetGame();
+        }
     }
   
 
