@@ -41,10 +41,8 @@ public class healthbar : MonoBehaviour
     {
        Number++;
         //hits ++;
-        spriteChange.visible = false;
+        //spriteChange.visible = false;
     }
   
 
 }
-
-

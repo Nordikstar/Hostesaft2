@@ -16,9 +16,9 @@ public class spriteChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        treff = GameObject.FindGameObjectWithTag("GameObject");
+        //treff = GameObject.FindGameObjectWithTag("GameObject");
         //treffScript = healthbar.GetComponent < public void OnCollisionEnter2D(Collision2D collision)>;
-        treffScript = treff.GetComponent<healthbar>();
+        //treffScript = treff.GetComponent<healthbar>();
 
        // treffScript.OnCollisionEnter2D(Collision2D collision);
     }
