@@ -9,7 +9,7 @@ public class healthbar : MonoBehaviour
     public spriteChange spriteChange;
     
     public Image angry;
-    public int Number = 5;
+    public int Number = 0;
     public Sprite[] spriteArray;
     public SpriteRenderer spr;
     public SpriteRenderer spriteRenderer;
